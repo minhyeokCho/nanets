@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.writeTable{padding: 24px 36px 54px;}
+.writeTable label{display: block; margin-bottom: 8px; color: #333333;}
+.writeTable .inputText{width: 100%; margin-bottom: 24px; }
+.writeTable > p{color: #373737; padding-left: 4px;}
+.writeTable .userInfo{padding-left: 0; margin-bottom: 20px; font-size: 16px; color: #333333;}
+.writeTable .userInfo span{font-size: 16px; color: #333333; display: inline-block;}
+.findFiles{margin-bottom: 30px;}
+.findFilesInput{width: calc(100% - 155px);}
+.findFileBtn{float: right; margin-bottom: 0 !important; width: 144px; height: 40px; line-height: 40px; text-align: center; background: #134aa9; border-radius: 3px; color: #ffffff !important;}
+.fileInfo{font-size: 14px; display: inline-block; margin-top: 12px; color: #333333;}
+.fileSize{margin-right: 40px;}
+.fileSize span{font-size: 14px;}
+.point{color: #ec008c;}
+@media screen and (max-width: 719px){
+    .writeTable{padding: 20px 24px 40px;}
+    .findFilesInput{width: 100%;}
+    .findFileBtn{float: none; margin-top: 8px;}
+}

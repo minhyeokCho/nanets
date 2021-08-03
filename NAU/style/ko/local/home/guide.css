@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* 개요 */
+.introW{position: relative; margin: 95px 50px 0; height: 1200px;}
+.introImg{ width: 922px; height: 616px;}
+.introImg img{width: 100%; height: 100%; border-radius: 45px;}
+
+.introContent {position: absolute; right: 0; top: 260px; background: #fff; width: 678px; height: 550px; padding: 55px 50px; box-shadow: 0px 5px 49px 0px rgba(0, 0, 0, 0.1); border-radius: 45px; box-sizing: border-box;}
+.introContent .introTit{margin-bottom: 16px; color: #000; font-size: 30px; font-family: NotoSansM,sans-serif;}
+.introContent table{border-top: 1px solid #494949;}
+.introContent tr td{padding: 18px 4px; font-size: 16px; border-bottom: 1px solid #f0f0f0;}
+.introContent tr td:nth-of-type(1){color: #555555;}
+.introContent tr td:nth-of-type(2){color: #000000;}
+
+.introW .circle1{width: 50px; height: 50px; border-radius: 50%; background: #f0f8ff; position: absolute; left: 48%; top: -130px; z-index: -4;}
+.introW .circle2{width: 800px; height: 670px;background: url(../../../../image/ko/local/guide/circle01.png) no-repeat center; position: absolute; right: 5%; top: -180px; z-index: -5;}
+.introW .circle3{width: 300px; height: 300px; border-radius: 50%; background: #f0f8ff; position: absolute; right: -10%; top: 40%; z-index: -4;}
+.introW .circle4{width: 300px; height: 300px; border-radius: 50%; background: #f2e7f7; position: absolute; left: 10%; top: 60%; z-index: -4;}
+@media screen and (max-width: 1850px){
+    .introW .circle3{right: 20%; top: 55%;}
+}
+@media screen and (max-width: 1620px){
+    .introW{margin: 95px 0 0 0; height: auto;}
+    .introImg{margin: 0 auto;}
+    .introContent{position: relative; top: -50px; left: 50%; right: inherit; -webkit-transform: translateX(-50%); transform: translateX(-50%);}
+}
+@media screen and (max-width: 970px){
+    .introImg{width: 100%; height: auto;}
+}
+@media screen and (max-width: 800px){
+    .introW{margin-top: 50px;}
+    .introContent{width: calc(100% - 40px); height: auto; padding: 30px;}
+    .introContent .introTit{font-size: 25px; margin-bottom: 10px;}
+    .introContent tr td{padding: 8px 4px; font-size: 15px;}
+    .introW .circle3{right: 0;}
+    .introW .circle4{left: 0; top: 40%;}
+}
+@media screen and (max-width: 500px){
+    .introContent{width: 100%; padding: 20px 16px; border-radius: 25px; top: -20px;}
+    .introContent .introTit{font-size: 22px;}
+    .introContent tr td{font-size: 14px;}
+}
+/* 개요 */
+
+/* 연혁*/
+.historyW{margin-top: 120px; position: relative;}
+
+.yearLeft01{padding-right:40px; width:calc(50% - 34px);overflow:hidden; position: relative;}
+.history > div:first-of-type::after{top: 13px !important;}
+.yearLeft01::after{display: block; content: ''; width: 1px; height: 100%; background: #a5c6ff; position: absolute; right: 6px; top: 0;}
+.yearLeft01::before{display: block; content: ''; width: 14px; height: 14px; background: #307cff; border-radius: 50%; position: absolute; right: 0; top: 13px; z-index: 1;}
+.yearLeft01 h4{color:#134aa9;font-size:36px;margin-bottom:12px;float:right; font-family:MontserratSB,sans-serif;}
+.yearLeft01 ul{float:right;clear:both;width:100%;}
+.yearLeft01 ul li{margin-bottom:12px;overflow:hidden;min-height:15px;}
+.yearLeft01 ul li .historyTxt{color:#343333;font-size:16px;line-height:21px;text-align:right;float:left;display:block;width:calc(100% - 100px);}
+.yearLeft01 ul li .date{width:100px;color:#8f8f8f;font-size:24px;font-family:MontserratSB,sans-serif;line-height:21px;text-align:right;float:left;display:block;}
+
+.yearLeft02{float:right; padding-left:40px;padding-right:0px; width:calc(50% - 33px);overflow:hidden;}
+.yearLeft01.yearLeft02::after{left: 6px;}
+.yearLeft01.yearLeft02::before{left: 0;}
+.yearLeft02 h4{float: left;}
+.yearLeft02 ul{float:right;clear:both;width:100%;}
+.yearLeft02 ul li{margin-bottom:12px;overflow:hidden;min-height:15px;}
+.yearLeft02 ul li .historyTxt{text-align:left;float:right;display:block;}
+.yearLeft02 ul li .date{text-align:left;float:left;display:block;}
+@media screen and (max-width: 719px){
+    .historyW{margin-top: 20px;}
+    .yearLeft01{width: 100%; padding-bottom: 20px; padding-top: 20px; padding-right: 0; border-bottom: 1px solid #a5c6ff ;}
+    .history > div:last-of-type{border: none; padding-bottom: 0;}
+    .yearLeft02{width: 100%; padding-left: 0;}
+    .history *{float: none !important; text-align: left !important;}
+    .yearLeft01::after, .yearLeft01::before{display: none;}
+    .yearLeft01 h4{font-size: 32px;}
+    .yearLeft01 ul li .date{float: left !important; font-size: 20px; width: 90px;}
+    .yearLeft01 ul li .historyTxt{float: right !important; font-size: 15px; width: calc(100% - 90px);}
+    
+}
+/* 연혁*/
+
+
+
+/* 열람공간 */
+.viewMap{position: relative; text-align: center; margin-top: 140px; overflow: hidden;}
+.viewMap .viewMapTxt{text-align: left; width: 200px; margin: 0 auto; position: relative; left: 378px; top: -25px;}
+.viewMap .viewMapTxt::after{display: block; content: ''; width: 34px; height: 34px; border-radius: 50%; background: rgba(0, 0, 0, 0.3); position: absolute; left: -162px; top: 55px;}
+.viewMap .viewMapTxt::before{display: block; content: ''; width: 143px; height: 1px; background: rgba(74, 74, 74, 0.2);position: absolute; left: -152px; top: 44px; transform: rotate(158deg);}
+.viewMapImg{overflow: hidden;}
+@media screen and (max-width: 1360px){
+    .viewMap img{width: 100%; height: auto;}
+}
+@media screen and (max-width: 900px){
+    .viewMapImg img{width: 150%; margin-left: -30%; }
+}
+@media screen and (max-width: 719px){
+    .viewMapImg img{width: 200%; margin-left: -70%; }
+}
+@media screen and (max-width: 500px){
+    .viewMapImg img{width: 300%; margin-left: -157%; }
+}
+
+.floorW{margin-top: 100px; text-align: center;}
+.floorImg{display: inline-block; vertical-align: middle; width: 792px; height: 523px; border: 1px solid #d4d4d4; border-radius: 40px; box-sizing: border-box;}
+.floorImg img{width: 100%; height: 100%;}
+
+.roomList{display: inline-block; vertical-align: middle; margin-left: 65px; text-align: left;}
+.roomList .floor{margin-bottom: 30px; color: #151515; font-size: 48px; font-family: NotoSansM,sans-serif;}
+.roomList ul li{color: #151515; font-size: 16px;}
+@media screen and (max-width: 1100px){
+    .floorImg{width: calc(100% - 150px); height: auto; padding: 5px;}
+    .floorImg img{width: 100%;}
+    .roomList{margin-left: 30px;}
+    .roomList .floor{margin-bottom: 10px;}
+}
+@media screen and (max-width: 719px){
+    .viewMap{margin-top: 50px;}
+    .floorW{margin-top: 50px;}
+    .floorImg{display: block; width: 100%;}
+    .roomList{margin-left: 0;}
+    .roomList .floor{font-size: 30px;}
+    .roomList ul li{font-size: 15px;}
+}
+/* 열람공간 */
+

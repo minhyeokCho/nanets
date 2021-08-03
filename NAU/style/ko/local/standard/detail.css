@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.detailTable{padding: 40px 36px 0;}
+.detailTable .title{color: #222222; font-size: 21px;}
+.detailTable .writeInfoW{margin-top: 4px;}
+.detailTable .writeInfoW span{display: inline-block; color: #555555; font-size: 14px; margin-right: 20px;}
+.detailTable .writeInfoW .date{font-family:Roboto,sans-serif;}
+.boardContent{margin-top: 50px; min-height: 400px; margin-bottom: 20px; line-height: 36px; color: #555555;}
+.addFiles{background: #f3f4f7; padding: 36px; box-sizing: border-box;}
+.addFiles > span{display: inline-block; color: #3c3c3c;}
+.addFiles ul{display: inline-block;}
+.addFiles ul li{display: inline-block; margin-left: 20px;}
+.addFiles ul li a{color: #1a0dab;text-decoration: underline;}
+@media screen and (max-width: 719px){
+    .detailTable{padding: 20px 24px 0;}
+    .boardContent{margin-top: 30px; line-height: 28px;}
+    .detailTable .writeInfoW span{margin-right: 12px;}
+    .addFiles{padding: 30px 20px;}
+    .addFiles ul{display: block;}
+    .addFiles ul li{margin: 8px 8px 0 0;}
+}
