@@ -273,7 +273,7 @@ h2 p{color: #666666; font-size: 18px; margin-top: 8px; font-family:NotoSans, san
 .footerInfo{margin-top: 60px; text-align: right;}
 .footerInfo ul li{display: inline-block; margin-left: 24px;}
 .footerInfo ul li a{color: rgba(255, 255, 255, 0.9); font-size: 14px;}
-.footerInfo address{margin-top: 24px; font-style: normal; color: rgba(255, 255, 255, 0.7); font-size: 14px;}
+.footerInfo address{display: none; margin-top: 24px; font-style: normal; color: rgba(255, 255, 255, 0.7); font-size: 14px;}
 .footerInfo .copyright{margin-top: 4px; color: rgba(255, 255, 255, 0.7); font-style: 13px; font-family:Barlow, sans-serif;}
 
 @media screen and (max-width: 1025px){
